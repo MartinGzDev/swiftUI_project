@@ -9,9 +9,12 @@ import SwiftUI
 
 struct MenuView: View {
     var body: some View {
-        NavigationStack{
-            NavigationLink(destination: IMCView()) {
-                Text("IMC Calculator")
+        
+        GeometryReader { geometry in
+            NavigationStack{
+                NavigationLink(destination: IMCView()) {
+                        Text("IMC Calculator")
+                    }
             }
         }
     }
