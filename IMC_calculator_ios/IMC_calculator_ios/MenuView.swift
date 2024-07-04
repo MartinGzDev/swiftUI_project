@@ -12,9 +12,16 @@ struct MenuView: View {
         
         GeometryReader { geometry in
             NavigationStack{
-                NavigationLink(destination: IMCView()) {
+                List{
+                    NavigationLink(destination: IMCView()) {
                         Text("IMC Calculator")
                     }
+                    NavigationLink(destination: SuperHeroSearcher()
+                    ){
+                        Text("Superhero Finder")
+                    }
+                }
+                
             }
         }
     }

@@ -31,6 +31,7 @@ struct IMCView: View {
                 CounterButton(text: "Peso", number: $weight)
             }
             IMCCalculateButton(userWeight: Double(weight), userHeight: height)
+            Spacer()
         }
         
         .toolbar{
@@ -43,7 +44,6 @@ struct IMCView: View {
         .toolbarBackground(.backgroundApp, for: .navigationBar)
         .toolbarBackground(.visible, for: .navigationBar)
         .padding(.top, 0.1)
-        .padding(.bottom, 1)
     }
     
     

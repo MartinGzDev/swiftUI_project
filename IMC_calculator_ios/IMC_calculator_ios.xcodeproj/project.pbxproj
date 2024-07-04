@@ -15,6 +15,11 @@
 		FB43E5EA2C34819800DE0F71 /* IMCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB43E5E92C34819800DE0F71 /* IMCView.swift */; };
 		FB43E5EC2C3481E400DE0F71 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB43E5EB2C3481E400DE0F71 /* MenuView.swift */; };
 		FB9810882C35A84C001903D8 /* IMCResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9810872C35A84C001903D8 /* IMCResult.swift */; };
+		FB98108B2C35DD61001903D8 /* ListExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98108A2C35DD61001903D8 /* ListExample.swift */; };
+		FB98108E2C371C6C001903D8 /* SuperHeroSearcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98108D2C371C6C001903D8 /* SuperHeroSearcher.swift */; };
+		FB9810902C3729CC001903D8 /* ApiNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98108F2C3729CC001903D8 /* ApiNetwork.swift */; };
+		FB9810932C3734AC001903D8 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = FB9810922C3734AC001903D8 /* SDWebImageSwiftUI */; };
+		FB9810952C373A17001903D8 /* SuperHeroDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9810942C373A17001903D8 /* SuperHeroDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,10 @@
 		FB43E5E92C34819800DE0F71 /* IMCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMCView.swift; sourceTree = "<group>"; };
 		FB43E5EB2C3481E400DE0F71 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		FB9810872C35A84C001903D8 /* IMCResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMCResult.swift; sourceTree = "<group>"; };
+		FB98108A2C35DD61001903D8 /* ListExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListExample.swift; sourceTree = "<group>"; };
+		FB98108D2C371C6C001903D8 /* SuperHeroSearcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroSearcher.swift; sourceTree = "<group>"; };
+		FB98108F2C3729CC001903D8 /* ApiNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiNetwork.swift; sourceTree = "<group>"; };
+		FB9810942C373A17001903D8 /* SuperHeroDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB9810932C3734AC001903D8 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +69,8 @@
 		FB43E5D72C347C0F00DE0F71 /* IMC_calculator_ios */ = {
 			isa = PBXGroup;
 			children = (
+				FB98108C2C371C21001903D8 /* Hero */,
+				FB9810892C35DD4A001903D8 /* Component */,
 				FB43E5E82C34814C00DE0F71 /* IMC */,
 				FB43E5D82C347C0F00DE0F71 /* IMC_calculator_iosApp.swift */,
 				FB43E5DA2C347C0F00DE0F71 /* ContentView.swift */,
@@ -87,6 +99,24 @@
 			path = IMC;
 			sourceTree = "<group>";
 		};
+		FB9810892C35DD4A001903D8 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				FB98108A2C35DD61001903D8 /* ListExample.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		FB98108C2C371C21001903D8 /* Hero */ = {
+			isa = PBXGroup;
+			children = (
+				FB98108D2C371C6C001903D8 /* SuperHeroSearcher.swift */,
+				FB98108F2C3729CC001903D8 /* ApiNetwork.swift */,
+				FB9810942C373A17001903D8 /* SuperHeroDetail.swift */,
+			);
+			path = Hero;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,6 +133,9 @@
 			dependencies = (
 			);
 			name = IMC_calculator_ios;
+			packageProductDependencies = (
+				FB9810922C3734AC001903D8 /* SDWebImageSwiftUI */,
+			);
 			productName = IMC_calculator_ios;
 			productReference = FB43E5D52C347C0F00DE0F71 /* IMC_calculator_ios.app */;
 			productType = "com.apple.product-type.application";
@@ -131,6 +164,9 @@
 				Base,
 			);
 			mainGroup = FB43E5CC2C347C0F00DE0F71;
+			packageReferences = (
+				FB9810912C3734AC001903D8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = FB43E5D62C347C0F00DE0F71 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -161,6 +197,10 @@
 				FB43E5EA2C34819800DE0F71 /* IMCView.swift in Sources */,
 				FB43E5DB2C347C0F00DE0F71 /* ContentView.swift in Sources */,
 				FB43E5DD2C347C0F00DE0F71 /* Item.swift in Sources */,
+				FB9810952C373A17001903D8 /* SuperHeroDetail.swift in Sources */,
+				FB98108E2C371C6C001903D8 /* SuperHeroSearcher.swift in Sources */,
+				FB98108B2C35DD61001903D8 /* ListExample.swift in Sources */,
+				FB9810902C3729CC001903D8 /* ApiNetwork.swift in Sources */,
 				FB9810882C35A84C001903D8 /* IMCResult.swift in Sources */,
 				FB43E5D92C347C0F00DE0F71 /* IMC_calculator_iosApp.swift in Sources */,
 			);
@@ -368,6 +408,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FB9810912C3734AC001903D8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB9810922C3734AC001903D8 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB9810912C3734AC001903D8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FB43E5CD2C347C0F00DE0F71 /* Project object */;
 }
